@@ -1,0 +1,29 @@
+header {
+    height: 150px;
+    background-color: #BDD0D2;
+  
+        position: sticky; top: 0;
+    
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: center; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    ". logo phone"
+    ". logo nav"; */
+
+}
+
+.logo {
+    margin-top: 39px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.nav  {
+    position: relative;
+    top: 60px;
+}
