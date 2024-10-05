@@ -1,29 +1,66 @@
-header {
+/* header {
     height: 150px;
     background-color: #BDD0D2;
-  
-        position: sticky; top: 0;
-    
-    /* display: flex;
-    align-items: flex-end;
-    justify-content: center; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas: 
-    ". logo phone"
-    ". logo nav"; */
+    position: sticky; 
+    top: 0;
+}
 
+.logoContainer{
+    max-width: 1200px;
 }
 
 .logo {
-    margin-top: 39px;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
+    position: relative;
+    top: 25px;
 }
 
 .nav  {
-    position: relative;
-    top: 60px;
+    background-color: black;
+    align-items: center;
+} */
+
+header {
+    height: 120px;
+    background-color: #BDD0D2;
+    position: sticky; 
+    top: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.logoContainer {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    
+}
+
+.navContainer {
+    max-width: 1200px;
+    display: flex;
+    width: 1200px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0px 100px;
+}
+
+nav {
+    margin: 10px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.navButton {
+    background: none;
+    border: none;
+    font-size: 15px;
 }
